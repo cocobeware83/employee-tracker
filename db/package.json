@@ -2,9 +2,13 @@
   "name": "db",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "migrate": "sqlite3 db/empDB1.db < db/schema.sql",
+    "seed": "sqlite3 db/empDB1.db < db/seeds.sql",
+    "db": "sqlite3 db/empDB1.db",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
