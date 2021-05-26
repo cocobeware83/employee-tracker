@@ -1,3 +1,5 @@
+USE empDB1;
+
 INSERT INTO department (name)
 VALUES 
     ('Sales'),
